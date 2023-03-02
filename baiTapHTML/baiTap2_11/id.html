@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>The id Attribute</h2>
+    <p>Use CSS to style an element with the id "myHeader":</p>
+
+    <h1 id="myHead">My Header </h1>
+    <h2>Difference Between Class and ID</h2>
+    <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+    <h2 class="city">London</h2>
+    <p>London is the capital of England</p>
+
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+    <h1 id="myHeader">Hello World</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script> function displayResult(){
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }</script>
+    <p><a href="#myHeader">Jum to my Header</a></p>
+</body>
+</html>

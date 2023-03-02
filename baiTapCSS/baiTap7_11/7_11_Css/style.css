@@ -1,0 +1,40 @@
+body {
+    background-color: lightblue;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+#para1 {
+    text-align: center;
+    color: green;
+}
+
+.center {
+    text-align: center;
+    color: blueviolet;
+}
+
+p.center {
+    text-align: right;
+    color: blue;
+}
+
+p.large {
+    font-size: 300%;
+}
+
+* {
+    text-align: justify;
+    color: rgb(140, 68, 153);
+}

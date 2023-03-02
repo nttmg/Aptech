@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .city {
+            background-color: olivedrab;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+
+        .cty {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+
+        .main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My <span class="note">Important</span> text.</h1>
+    <p>This is some <span class="note">important</span> text.</p>
+
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of england</p>
+
+    </div>
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan</p>
+    </div>
+
+    <h2 class="cty">Paris</h2>
+    <p >Paris is the captial of France</p>
+
+    <h2>Multiple Classes</h2>
+    <p>Here, all three h2 elements belongs to the "cty" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+    <h2 class="cty main">London</h2>
+    <h2 class="cty">Paris</h2>
+    <h2 class="cty">Tokyo</h2>
+
+    <h2>Use of The Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "cit"</p>
+
+    <button onclick="myFunction()">Hide elements</button>
+
+    <h2 class="cit">London</h2>
+    <p>London is the capital of England</p>
+
+    <h2 class="cit">Paris</h2>
+    <p>Paris is the capital of France</p>
+
+    <h2 class="cit">Tokyo</h2>
+    <p>Tokyo is the capital of Japan</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("cit");
+            for (var i=0;i<x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
